@@ -1,0 +1,125 @@
+/* ===== EDUCATION SECTION ===== */
+#education {
+  padding: 80px 0%;
+
+}
+
+/* Header */
+.edu-header {
+  margin-bottom: 50px;
+}
+
+.edu-header h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.edu-header p {
+  color: #aaa;
+  max-width: 650px;
+  margin-top: 10px;
+}
+
+/* ===== GRID: ALL IN ONE LINE ===== */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.edu-card {
+  flex: 1;
+  background: #111; /* SAME as skills cards */
+  border-radius: 22px;
+  padding: 30px;
+  min-height: 230px;
+
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover glow */
+.edu-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(76, 110, 245, 0.35),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.edu-card:hover::before {
+  opacity: 1;
+}
+
+/* Lift on hover */
+.edu-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ===== Highlighted (First card) ===== */
+
+
+/* ===== ICON ===== */
+.edu-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+/* ===== TEXT ===== */
+.edu-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.edu-card h4 {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+.edu-card .institute {
+  margin-top: 12px;
+  color: #aaa;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.edu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.edu-footer .score {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
