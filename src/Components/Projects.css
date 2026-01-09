@@ -44,12 +44,11 @@
 
 .project-card img {
   width: 100%;
-  height: 200px;          /* 👈 control size */
-  object-fit: cover;     /* 👈 crop nicely */
+  height: 200px;
+  object-fit: cover;
   border-radius: 16px;
   margin-bottom: 16px;
 }
-
 
 .project-card h3 {
   font-size: 1.4rem;
@@ -76,86 +75,106 @@
   font-size: 0.85rem;
 }
 
-/* MODAL */
+/* MODAL OVERLAY */
 .project-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
 
+/* MODAL CONTENT (SMALL & CENTERED) */
 .modal-content {
   background: linear-gradient(145deg, #020617, #020617);
-  width: 90%;
-  max-width: 1100px;
-  max-height: 90vh;
+  width: 85%;
+  max-width: 720px;     /* 👈 smaller width */
+  max-height: 80vh;     /* 👈 prevent fullscreen */
   overflow-y: auto;
-  border-radius: 28px;
-  padding: 40px;
+  border-radius: 22px;
+  padding: 28px;        /* 👈 reduced padding */
   position: relative;
+  animation: scaleIn 0.25s ease;
 }
 
-/* Close */
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
 .close-btn {
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 16px;
+  right: 20px;
   background: none;
   color: #fff;
   border: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
 }
 
-/* Modal content */
+/* Modal Content */
 .modal-content h2 {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
+/* Modal Image */
 .modal-image {
   width: 100%;
-  max-height: 280px;     /* 👈 limit height */
-  object-fit: contain;  /* 👈 show full image */
-  border-radius: 16px;
-  margin-bottom: 24px;
-  background: #020617;  /* optional */
+  height: 240px;          /* fixed height */
+  object-fit: cover;     /* 👈 fills full width */
+  border-radius: 14px;
+  margin-bottom: 18px;
 }
 
+/* Description */
 .modal-desc {
   color: #cbd5e1;
-  line-height: 1.7;
-  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
 }
 
+/* Modal Tech */
 .modal-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 22px;
 }
 
 .modal-tech span {
-  padding: 10px 18px;
+  padding: 8px 16px;
   border-radius: 999px;
   border: 1px solid #22d3ee;
+  font-size: 0.85rem;
 }
 
 /* Actions */
 .modal-actions {
   display: flex;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .modal-actions a {
-  padding: 14px 26px;
-  border-radius: 14px;
+  padding: 12px 22px;
+  border-radius: 12px;
   text-decoration: none;
   color: #fff;
   border: 1px solid #22d3ee;
+  font-size: 0.9rem;
 }
 
 .modal-actions a.primary {
@@ -170,6 +189,11 @@
   }
 
   .projects-header h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+  }
+
+  .modal-content {
+    width: 92%;
+    max-height: 85vh;
   }
 }

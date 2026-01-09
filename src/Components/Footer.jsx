@@ -24,8 +24,8 @@ function Footer() {
 
         {/* Social */}
         <div className="footer-social">
-          <a href="https://linkedin.com" target="_blank"><FaLinkedin /></a>
-          <a href="https://github.com" target="_blank"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/avesh-malek-733991327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><FaLinkedin /></a>
+          <a href="https://github.com/avesh-malek" target="_blank"><FaGithub /></a>
         </div>
 
       </div>

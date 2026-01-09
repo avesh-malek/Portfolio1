@@ -1,35 +1,35 @@
 import { useState } from "react";
 import "./Projects.css";
-import attendanceImg from "../assets/882548.jpg";
+import attendanceImg from "../assets/Fooditemimg.png";
 
 
 const projectsData = [
   {
     id: 1,
-    title: "Face Recognition Attendance System",
-    status: "Production",
+    title: "Fooditem App",
+    status: "basik dummy",
     shortDesc:
-      "A production-ready face recognition attendance system for SMEs.",
+      "basik React-based CRUD application to manage food items with add, update, remove, and active state features.",
     fullDesc:
-      "This project is a face recognition–based attendance management system designed and deployed for real-world SME usage. It allows employees to mark IN and OUT attendance using face recognition, eliminating biometric machines and manual registers. Includes admin dashboard, employee management, reports, and device control.",
+      "Each item can be marked as active, edited inline, or deleted.The application demonstrates clean state management using React Hooks and component-based architecture This project focuses on understanding real-world React concepts such as lifting state up, controlled components, conditional rendering, and immutable updates.",
     image: attendanceImg,
-    tech: ["React", "Spring Boot", "MySQL", "JWT", "OpenCV"],
-    github: "https://github.com/yourusername/attendance-system",
+    tech: ["React","Javascript","CSS Module","basik Hooks"],
+    github: "https://github.com/avesh-malek/first-demo-react-app.git",
     live: "https://attendance-demo.com",
   },
   {
     id: 2,
-    title: "Task Management System",
+    title: "",
     status: "Full Stack",
     shortDesc:
-      "A role-based task management system with real-time updates.",
+      "",
     fullDesc:
-      "A full-stack task management system with user authentication, role-based access, and real-time task updates. Users can create projects, assign tasks, track progress, and collaborate efficiently.",
+      "",
     // image: "https://via.placeholder.com/900x500?text=Task+Management+System",
-    image: attendanceImg,
-    tech: ["React", "Spring Boot", "MySQL", "JWT", "Tailwind CSS"],
-    github: "https://github.com/yourusername/task-manager",
-    live: "https://taskpro-demo.com",
+    image: "",
+    tech: [""],
+    github: "",
+    live: "",
   },
 ];
 
