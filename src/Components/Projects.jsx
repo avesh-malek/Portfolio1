@@ -15,7 +15,7 @@ const projectsData = [
     image: attendanceImg,
     tech: ["React","Javascript","CSS Module","basik Hooks"],
     github: "https://github.com/avesh-malek/first-demo-react-app.git",
-    live: "https://attendance-demo.com",
+    live: "https://fooditem-opal.vercel.app/",
   },
   {
     id: 2,
