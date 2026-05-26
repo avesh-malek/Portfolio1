@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Projects.css";
 import attendanceImg from "../assets/Fooditemimg.png";
+import EMS from "../assets/EMS.jpeg";
 
 
 const projectsData = [
@@ -19,17 +20,17 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "",
+    title: "StaffMaster-Employee Management System",
     status: "Full Stack",
     shortDesc:
-      "",
+      "For Demo Access Admin - admin@ems.com , Password - admin123,Employee - aveshmalek91@gmail.com , Password - Avesh@123",
     fullDesc:
-      "",
+      "StaffMaster is a full-stack application designed to streamline employee management processes. It includes features for adding, editing, and deleting employee records, tracking attendance, and managing performance reviews. The application utilizes a modern tech stack to ensure a smooth user experience.",
     // image: "https://via.placeholder.com/900x500?text=Task+Management+System",
-    image: "",
-    tech: [""],
-    github: "",
-    live: "",
+    image: EMS,
+    tech: ["React","Node.js","Express","MongoDB","JWT Authentication"],
+    github: "https://github.com/avesh-malek/staff-master-employee-management-system-",
+    live: "https://staff-master-employee-management-system.vercel.app/#/",
   },
 ];
 
