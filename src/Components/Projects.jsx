@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Projects.css";
 import attendanceImg from "../assets/Fooditemimg.png";
 import EMS from "../assets/EMS.jpeg";
-
+import std from "../assets/std.png";
 
 const projectsData = [
   {
@@ -31,6 +31,21 @@ const projectsData = [
     tech: ["React","Node.js","Express","MongoDB","JWT Authentication"],
     github: "https://github.com/avesh-malek/staff-master-employee-management-system-",
     live: "https://staff-master-employee-management-system.vercel.app/#/",
+  },
+  ,
+  {
+    id: 3,
+    title: "Student Record Manager",
+    status: "Full Stack",
+    shortDesc:
+      "Developed a responsive Student Record Manager using React, Redux Toolkit, Node.js, Express.js, and MongoDB. Implemented student creation, listing, deletion, search, filtering, sorting, pagination, and REST API integration.",
+    fullDesc:
+      "Designed and developed a Student Record Manager web application using React, Redux Toolkit, Node.js, Express.js, and MongoDB. Features include student management (Create, Read, Delete), search, course filtering, sorting, pagination, form validation, and a responsive user interface. Utilized REST APIs, Git/GitHub for version control, and deployed the application on Vercel (frontend) and Render (backend).",
+    // image: "https://via.placeholder.com/900x500?text=Task+Management+System",
+    image: std,
+    tech: ["React","Node.js","Express","Mongodbatlas","Redux Toolkit"],
+    github: "https://github.com/avesh-malek/StudentRecordManager",
+    live: "https://student-record-manager-vert.vercel.app/",
   },
 ];
 
